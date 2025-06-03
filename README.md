@@ -1,4 +1,4 @@
-# TRENCHES EXCAVATOR
+# TRENCH EXCAVATOR
 
 A crypto-archaeological wallet analysis tool with cyberpunk aesthetic for analyzing memecoin trading patterns across multiple blockchains.
 
