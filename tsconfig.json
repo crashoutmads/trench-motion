@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", // Modern JavaScript target
+    "useDefineForClassFields": true, // Use define for class fields for better compatibility
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],// Include modern libraries
+    "module": "ESNext", // Use ESNext module system for modern features
+    "moduleResolution": "Node", // Use Bundler for module resolution to support modern tools
+    "esModuleInterop": true, // Enable interop between CommonJS and ES modules
+    "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
+    "skipLibCheck": true, // Skip type checking of declaration files for faster builds
+    "allowImportingTsExtensions": true, // Allow importing TypeScript files with .ts extension
+    "resolveJsonModule": true, // Allow importing JSON files
+    "isolatedModules": true, // Isolate modules for better compatibility with tools like Babel
+    "noEmit": true, // Do not emit output files, only type-check
+    "forceConsistentCasingInFileNames": true, // Enforce consistent casing in file names
+    "outDir": "./dist", // Output directory for compiled files
+    "rootDir": ".", // Root directory for source files
+    "allowJs": true, // Allow JavaScript files to be compiled
+    "checkJs": false, // Enable type checking for JavaScript files
+    "strict": true, // Enable all strict type-checking options
+    "jsx": "react-jsx", // Use the new JSX transform for React 17+
+    "jsxImportSource": "react", // Specify the JSX factory for React
+    "baseUrl": ".", // Base directory for resolving non-relative module names
+    "paths": {
+      "@/*": ["./src/*"], // Alias for src directory
+      "@visualizations/*": ["./src/visualizations/*"], // Alias for visualizations
+      "@components/*": ["./src/components/*"], // Alias for components
+      "@styles/*": ["./src/styles/*"] // Alias for styles
+    },
+    "types": ["node"] // Include Node.js types for server-side code
+  },
+  "include": [
+    "src/**/*", // Include all TypeScript and JavaScript files in src
+    "server/**/*", // Include server-side TypeScript files
+    "vite.config.ts", // Include Vite configuration
+    "server.ts" // Include main server entry point
+  ],
+  "exclude": ["node_modules", "dist"] // Exclude node_modules and output directory
+}
